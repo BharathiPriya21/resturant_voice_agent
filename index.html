@@ -1,0 +1,451 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Leaf Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+
+      NAV
+      <nav class="site-nav">
+        <div class="brand">
+          <span class="brand-mark">🍃</span>
+          <span class="brand-name">Banana Leaf</span>
+        </div>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#order">Order</a>
+        </div>
+        <a href="#order" class="nav-cta">Order Now</a>
+      </nav>
+
+      <!-- HERO -->
+      <!-- <header class="hero">
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+            alt="Banana Leaf Restaurant spread"
+          />
+          <div class="hero-media-fade"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Madurai Style &middot; Since 1998</p>
+          <h1>Authentic South Indian,<br>served the way it should be.</h1>
+          <p class="hero-sub">
+            Slow-cooked biryanis, stone-ground batters, and chettinad spice
+            blends &mdash; order in seconds with our AI ordering assistant,
+            by voice or by text.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+              Start Your Order
+            </button>
+            <a href="#menu" class="btn-ghost">View Menu</a>
+          </div>
+        </div>
+      </header> -->
+
+      <!-- MENU -->
+      <!-- <section class="menu" id="menu">
+        <div class="section-head">
+          <p class="eyebrow">From the kitchen</p>
+          <h2>Popular Dishes</h2>
+        </div>
+
+        <div class="menu-grid">
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcZfCvrFuvfEfLY3dB5IeWTFEjh7fccNWR774Qj-9JQ&s=10" alt="Chicken Biryani"></div>
+            <div class="card-body">
+              <h3>Chicken Biryani</h3>
+              <p class="price">₹220</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6C_uAgtS6YYLpA2FNOi3HyT1LzbJPjKlHj2zK96_evw&s=10" alt="Parotta and Curry"></div>
+            <div class="card-body">
+              <h3>Parotta &amp; Curry</h3>
+              <p class="price">₹180</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=600&auto=format&fit=crop" alt="Chicken Noodles"></div>
+            <div class="card-body">
+              <h3>Chicken Noodles</h3>
+              <p class="price">₹200</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=600&auto=format&fit=crop" alt="Chicken Fried Rice"></div>
+            <div class="card-body">
+              <h3>Chicken Fried Rice</h3>
+              <p class="price">₹180</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=600&auto=format&fit=crop" alt="Fried Chicken"></div>
+            <div class="card-body">
+              <h3>Fried Chicken</h3>
+              <p class="price">₹250</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_qW9OZ60M28BAyzahjDUwIYa_eosSGRMORYbxwXFAvg&s=10" alt="Fish Fry"></div>
+            <div class="card-body">
+              <h3>Fish Fry</h3>
+              <p class="price">₹220</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLCMBqpPbGixWKafeh4aLsKpnUUGImPgc4YpeLwtTog&s=10" alt="Chicken 65"></div>
+            <div class="card-body">
+              <h3>Chicken 65</h3>
+              <p class="price">₹190</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQclWu1CDRDyXVmJh_2xcZGywXdOhspWh6JNECZIjaOlg&s=10" alt="Pepper Chicken"></div>
+            <div class="card-body">
+              <h3>Pepper Chicken</h3>
+              <p class="price">₹240</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDci4l4-svzQZVY6QB9_OSvr7dsOxgnB1BfcmQhPvCg&s=10" alt="Idly"></div>
+            <div class="card-body">
+              <h3>Idly</h3>
+              <p class="price">₹40</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=600&auto=format&fit=crop" alt="Dosa"></div>
+            <div class="card-body">
+              <h3>Dosa</h3>
+              <p class="price">₹60</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNfwW8yjaRY0upeoJjTddXDb3jL2UQaRJceBH-jaxMg&s=10" alt="Poori"></div>
+            <div class="card-body">
+              <h3>Poori</h3>
+              <p class="price">₹70</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVUSi3kv3y-BQuISrIOzKczhNy7MnttCQIJbQoV8kEWQ&s=10" alt="Masala Dosa"></div>
+            <div class="card-body">
+              <h3>Masala Dosa</h3>
+              <p class="price">₹90</p>
+            </div>
+          </div>
+
+        </div>
+      </section> -->
+
+      <!-- AI ORDER ASSISTANT -->
+      <!-- <section class="ai-section" id="order">
+        <div class="ai-section-inner">
+
+          <div class="ai-intro">
+            <p class="eyebrow">No app. No hold music.</p>
+            <h2>Order by voice, in plain English.</h2>
+            <p class="ai-intro-sub">
+              Tap start, say your name, and let our assistant take it from
+              there &mdash; pickup or delivery, your way.
+            </p>
+            <ul class="ai-steps">
+              <li><span class="step-no">1</span> Tell us your name &amp; number</li>
+              <li><span class="step-no">2</span> Choose pickup or delivery</li>
+              <li><span class="step-no">3</span> Say what you'd like to eat</li>
+              <li><span class="step-no">4</span> Confirm &amp; we'll get cooking</li>
+            </ul>
+          </div>
+
+          <div class="chat-widget">
+            <div class="chat-header">
+              <div class="chat-header-avatar">🍃</div>
+              <div class="chat-header-text">
+                <strong>Order Assistant</strong>
+                <span id="agent-status">Tap "Start AI Order" to begin</span>
+              </div>
+              <button class="chat-restart" onclick="startOrder()" title="Start new order">↻</button>
+            </div>
+
+            <div id="chatBox" class="chat-body">
+              <div class="chat-empty">
+                Welcome! Click <strong>Start AI Order</strong> to begin 🍃
+              </div>
+            </div>
+
+            <div class="chat-input-row">
+              <button class="mic-btn" id="micBtn" onclick="startVoice()" title="Speak">🎤</button>
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Type your reply..."
+                onkeydown="if(event.key==='Enter') sendMessage()"
+              >
+              <button class="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+
+            <button class="start-order-btn" onclick="startOrder()">
+              Start AI Order
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <p>🍃 Banana Leaf Restaurant &nbsp;&middot;&nbsp; © 2026</p>
+      </footer>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> --> 
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banana Leaf Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+
+      <!-- NAV -->
+      <nav class="site-nav">
+        <div class="brand">
+          <span class="brand-mark">🍃</span>
+          <span class="brand-name">Banana Leaf</span>
+        </div>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#order">Order</a>
+        </div>
+        <a href="#order" class="nav-cta">Order Now</a>
+      </nav>
+
+      <!-- HERO -->
+      <header class="hero">
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop"
+            alt="Banana Leaf Restaurant spread"
+          />
+          <div class="hero-media-fade"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Madurai Style &middot; Since 1998</p>
+          <h1>Authentic South Indian,<br>served the way it should be.</h1>
+          <p class="hero-sub">
+            Slow-cooked biryanis, stone-ground batters, and chettinad spice
+            blends &mdash; order in seconds with our AI ordering assistant,
+            by voice or by text.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('order').scrollIntoView({behavior:'smooth'})">
+              Start Your Order
+            </button>
+            <a href="#menu" class="btn-ghost">View Menu</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- MENU -->
+      <section class="menu" id="menu">
+        <div class="section-head">
+          <p class="eyebrow">From the kitchen</p>
+          <h2>Popular Dishes</h2>
+        </div>
+
+        <div class="menu-grid">
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlcZfCvrFuvfEfLY3dB5IeWTFEjh7fccNWR774Qj-9JQ&s=10" alt="Chicken Biryani"></div>
+            <div class="card-body">
+              <h3>Chicken Biryani</h3>
+              <p class="price">₹220</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6C_uAgtS6YYLpA2FNOi3HyT1LzbJPjKlHj2zK96_evw&s=10" alt="Parotta and Curry"></div>
+            <div class="card-body">
+              <h3>Parotta &amp; Curry</h3>
+              <p class="price">₹180</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=600&auto=format&fit=crop" alt="Chicken Noodles"></div>
+            <div class="card-body">
+              <h3>Chicken Noodles</h3>
+              <p class="price">₹200</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=600&auto=format&fit=crop" alt="Chicken Fried Rice"></div>
+            <div class="card-body">
+              <h3>Chicken Fried Rice</h3>
+              <p class="price">₹180</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=600&auto=format&fit=crop" alt="Fried Chicken"></div>
+            <div class="card-body">
+              <h3>Fried Chicken</h3>
+              <p class="price">₹250</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_qW9OZ60M28BAyzahjDUwIYa_eosSGRMORYbxwXFAvg&s=10" alt="Fish Fry"></div>
+            <div class="card-body">
+              <h3>Fish Fry</h3>
+              <p class="price">₹220</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLCMBqpPbGixWKafeh4aLsKpnUUGImPgc4YpeLwtTog&s=10" alt="Chicken 65"></div>
+            <div class="card-body">
+              <h3>Chicken 65</h3>
+              <p class="price">₹190</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQclWu1CDRDyXVmJh_2xcZGywXdOhspWh6JNECZIjaOlg&s=10" alt="Pepper Chicken"></div>
+            <div class="card-body">
+              <h3>Pepper Chicken</h3>
+              <p class="price">₹240</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDci4l4-svzQZVY6QB9_OSvr7dsOxgnB1BfcmQhPvCg&s=10" alt="Idly"></div>
+            <div class="card-body">
+              <h3>Idly</h3>
+              <p class="price">₹40</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=600&auto=format&fit=crop" alt="Dosa"></div>
+            <div class="card-body">
+              <h3>Dosa</h3>
+              <p class="price">₹60</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTNfwW8yjaRY0upeoJjTddXDb3jL2UQaRJceBH-jaxMg&s=10" alt="Poori"></div>
+            <div class="card-body">
+              <h3>Poori</h3>
+              <p class="price">₹70</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVUSi3kv3y-BQuISrIOzKczhNy7MnttCQIJbQoV8kEWQ&s=10" alt="Masala Dosa"></div>
+            <div class="card-body">
+              <h3>Masala Dosa</h3>
+              <p class="price">₹90</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- AI ORDER ASSISTANT -->
+      <section class="ai-section" id="order">
+        <div class="ai-section-inner">
+
+          <div class="ai-intro">
+            <p class="eyebrow">No app. No hold music.</p>
+            <h2>Order by voice, in plain English.</h2>
+            <p class="ai-intro-sub">
+              Tap start, say your name, and let our assistant take it from
+              there &mdash; pickup or delivery, your way.
+            </p>
+            <ul class="ai-steps">
+              <li><span class="step-no">1</span> Tell us your name &amp; number</li>
+              <li><span class="step-no">2</span> Choose pickup or delivery</li>
+              <li><span class="step-no">3</span> Say what you'd like to eat</li>
+              <li><span class="step-no">4</span> Confirm &amp; we'll get cooking</li>
+            </ul>
+          </div>
+
+          <div class="chat-widget">
+            <div class="chat-header">
+              <div class="chat-header-avatar">🍃</div>
+              <div class="chat-header-text">
+                <strong>Order Assistant</strong>
+                <span id="agent-status">Tap "Start AI Order" to begin</span>
+              </div>
+              <button class="chat-restart" onclick="startOrder()" title="Start new order">↻</button>
+            </div>
+
+            <div class="chat-progress"><div class="chat-progress-fill" id="progressFill"></div></div>
+
+            <div id="chatBox" class="chat-body">
+              <div class="chat-empty">
+                Welcome! Click <strong>Start AI Order</strong> to begin 🍃
+              </div>
+            </div>
+
+            <div class="chat-input-row">
+              <button class="mic-btn" id="micBtn" onclick="startVoice()" title="Speak">🎤</button>
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Type your reply..."
+                onkeydown="if(event.key==='Enter') sendMessage()"
+              >
+              <button class="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+
+            <button class="start-order-btn" onclick="startOrder()">
+              Start AI Order
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <p>🍃 Banana Leaf Restaurant &nbsp;&middot;&nbsp; © 2026</p>
+      </footer>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
