@@ -31,7 +31,7 @@ let order = {
   status: "Pending"
 };
 
-window.startOrder = function () {
+window.startOrder = async function () {
 
   step = 1;
 
@@ -50,8 +50,9 @@ window.startOrder = function () {
   updateProgress(1);
   setAgentStatus("Step 1 of 6 — your name");
 
-  botSay("Welcome to Banana Leaf Restaurant 🍃", 200);
-  botSay("Please tell your name.", 700);
+ await botSay("Welcome to Banana Leaf Restaurant 🍃", 200);
+ await botSay("We're delighted to serve you today.");
+ await botSay("May I know your name?");
 
   startVoice();
 };
@@ -370,6 +371,10 @@ Please say CONFIRM to place the order, or Cancel to start over.`,
 async function saveOrder() {
 
   setAgentStatus("Placing your order...");
+
+   await botSay(
+    "🍃 We're placing your order now. This will only take a few seconds. Please keep this window open."
+  );
 
   const payload = {
 
